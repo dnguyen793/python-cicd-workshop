@@ -48,9 +48,7 @@ jobs:
           name: Run Tests
           command: ~/.local/bin/pytest
 
-      - store_artifacts:
-          path: test-reports
-          destination: test-reports
+
   deploy:
     docker:
       - image: circleci/python:3.7
